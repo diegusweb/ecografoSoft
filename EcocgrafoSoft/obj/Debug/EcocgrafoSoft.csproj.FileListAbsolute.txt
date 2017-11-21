@@ -1,0 +1,12 @@
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\bin\Debug\EcocgrafoSoft.exe.config
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.csprojResolveAssemblyReference.cache
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.Properties.Resources.resources
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.View.EcoLayout.resources
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.csproj.GenerateResource.Cache
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\bin\Debug\EcocgrafoSoft.exe
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\bin\Debug\EcocgrafoSoft.pdb
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.View.MainProgram.resources
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.exe
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.pdb
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.View.PatientPanel.resources
+D:\netProjects\2017\EcocgrafoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.View.Fosssrm1.resources
