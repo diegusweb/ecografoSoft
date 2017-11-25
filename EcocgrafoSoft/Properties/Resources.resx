@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,120 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Delete_Button_Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Delete_Successful_Message" xml:space="preserve">
+    <value>Member details deleted successfully</value>
+  </data>
+  <data name="Delete_Successful_Message_Title" xml:space="preserve">
+    <value>Delete successfull</value>
+  </data>
+  <data name="Error_Message_Header" xml:space="preserve">
+    <value>Please check the following.</value>
+  </data>
+  <data name="Export_Button_Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Login_Login_Button_Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_Password_Label_Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="Login_Username_Label_Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="Login_Validation_Message" xml:space="preserve">
+    <value>Please enter a valid username and password.</value>
+  </data>
+  <data name="Login_Validation_Message_Title" xml:space="preserve">
+    <value>Login - Message</value>
+  </data>
+  <data name="Print_PrintPreview_Button_Text" xml:space="preserve">
+    <value>Print preview</value>
+  </data>
+  <data name="Print_Print_Button_Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Registration_Children_Label_Text" xml:space="preserve">
+    <value>No. of children</value>
+  </data>
+  <data name="Registration_DateOfBirth_Label_Text" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="Registration_Error_Message" xml:space="preserve">
+    <value>Registration failed</value>
+  </data>
+  <data name="Registration_Error_Message_Title" xml:space="preserve">
+    <value>Registration error</value>
+  </data>
+  <data name="Registration_HealthStatus_Label_Text" xml:space="preserve">
+    <value>Health status</value>
+  </data>
+  <data name="Registration_HealthStatus_Select_Text" xml:space="preserve">
+    <value>Please select health status.</value>
+  </data>
+  <data name="Registration_MaritalStatus_Label_Text" xml:space="preserve">
+    <value>Marital status</value>
+  </data>
+  <data name="Registration_MaritalStatus_Select_Text" xml:space="preserve">
+    <value>Please select marital status.</value>
+  </data>
+  <data name="Registration_Name_Label_Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Registration_Name_Required_Text" xml:space="preserve">
+    <value>Name is required.</value>
+  </data>
+  <data name="Registration_Occupation_Label_Text" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="Registration_Occupation_Select_Text" xml:space="preserve">
+    <value>Please select a occupation.</value>
+  </data>
+  <data name="Registration_Register_Button_Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Registration_Salary_Label_Text" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="Registration_Successful_Message" xml:space="preserve">
+    <value>New member registered successfully!</value>
+  </data>
+  <data name="Registration_Successful_Message_Title" xml:space="preserve">
+    <value>Registration Successful</value>
+  </data>
+  <data name="Report_Header" xml:space="preserve">
+    <value>Social Member Club - Members</value>
+  </data>
+  <data name="Search_Refresh_Button_Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Search_Search_Button_Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="System_Error_Message" xml:space="preserve">
+    <value>Oops! System error. Please contact administrator.</value>
+  </data>
+  <data name="System_Error_Message_Title" xml:space="preserve">
+    <value>Error - Message</value>
+  </data>
+  <data name="Update_Button_Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Update_Error_Message_Title" xml:space="preserve">
+    <value>Update error</value>
+  </data>
+  <data name="Update_Successful_Message" xml:space="preserve">
+    <value>Member details updated successfully</value>
+  </data>
+  <data name="Update_Successful_Message_Title" xml:space="preserve">
+    <value>Update successfull</value>
+  </data>
 </root>
