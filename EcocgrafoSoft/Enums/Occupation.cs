@@ -12,19 +12,14 @@ namespace EcocgrafoSoft.Enums
         /// <summary>
         /// Occupation - Doctor
         /// </summary>
-        [Description("Doctor")]
-        Doctor = 1,
+        [Description("Masculino")]
+        Masculino = 1,
 
         /// <summary>
         /// Occupation - Engineer
         /// </summary>
-        [Description("Engineer")]
-        Engineer,
+        [Description("Femenino")]
+        Femenino,
 
-        /// <summary>
-        /// Occupation - Professor
-        /// </summary>
-        [Description("Professor")]
-        Professor,
     }
 }

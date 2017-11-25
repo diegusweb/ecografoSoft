@@ -20,3 +20,5 @@ D:\netProjects\2017\EcografoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.View.Main
 D:\netProjects\2017\EcografoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.csproj.GenerateResource.Cache
 D:\netProjects\2017\EcografoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.Login.resources
 D:\netProjects\2017\EcografoSoft\EcocgrafoSoft\obj\Debug\EcocgrafoSoft.csprojResolveAssemblyReference.cache
+D:\netProjects\2017\EcografoSoft\EcocgrafoSoft\bin\Debug\EcoDB.mdf
+D:\netProjects\2017\EcografoSoft\EcocgrafoSoft\bin\Debug\EcoDB_log.ldf

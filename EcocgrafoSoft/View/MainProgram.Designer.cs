@@ -34,21 +34,25 @@
             this.tabRegistration = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabRegister = new System.Windows.Forms.TabPage();
-            this.lblHealthStatusRequired = new System.Windows.Forms.Label();
-            this.lblMaritalStatusRequired = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textOthers = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.lblOccupationRequired = new System.Windows.Forms.Label();
             this.lblDOBRequired = new System.Windows.Forms.Label();
             this.lblNameRequired = new System.Windows.Forms.Label();
             this.lblNoOfChildren = new System.Windows.Forms.Label();
-            this.txtNoOfChildren = new System.Windows.Forms.TextBox();
+            this.txtNoPhone = new System.Windows.Forms.TextBox();
             this.lblSalary = new System.Windows.Forms.Label();
-            this.txtSalary = new System.Windows.Forms.TextBox();
-            this.cmbHealthStatus = new System.Windows.Forms.ComboBox();
-            this.lblHealthStatus = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.dtDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.cmbMaritalStatus = new System.Windows.Forms.ComboBox();
-            this.lblMaritalStatus = new System.Windows.Forms.Label();
             this.lblOccupation = new System.Windows.Forms.Label();
             this.cmbOccupation = new System.Windows.Forms.ComboBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -138,7 +142,7 @@
             this.tabRegistration.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabRegistration.Size = new System.Drawing.Size(1544, 730);
             this.tabRegistration.TabIndex = 0;
-            this.tabRegistration.Text = "New Registration";
+            this.tabRegistration.Text = "Nuevo Registro";
             // 
             // tabControl2
             // 
@@ -148,26 +152,30 @@
             this.tabControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(850, 441);
+            this.tabControl2.Size = new System.Drawing.Size(963, 441);
             this.tabControl2.TabIndex = 5;
             // 
             // tabRegister
             // 
-            this.tabRegister.Controls.Add(this.lblHealthStatusRequired);
-            this.tabRegister.Controls.Add(this.lblMaritalStatusRequired);
+            this.tabRegister.Controls.Add(this.label14);
+            this.tabRegister.Controls.Add(this.label13);
+            this.tabRegister.Controls.Add(this.label12);
+            this.tabRegister.Controls.Add(this.textOthers);
+            this.tabRegister.Controls.Add(this.label9);
+            this.tabRegister.Controls.Add(this.label8);
+            this.tabRegister.Controls.Add(this.txtLastName);
+            this.tabRegister.Controls.Add(this.label7);
+            this.tabRegister.Controls.Add(this.txtFirstName);
+            this.tabRegister.Controls.Add(this.label6);
             this.tabRegister.Controls.Add(this.lblOccupationRequired);
             this.tabRegister.Controls.Add(this.lblDOBRequired);
             this.tabRegister.Controls.Add(this.lblNameRequired);
             this.tabRegister.Controls.Add(this.lblNoOfChildren);
-            this.tabRegister.Controls.Add(this.txtNoOfChildren);
+            this.tabRegister.Controls.Add(this.txtNoPhone);
             this.tabRegister.Controls.Add(this.lblSalary);
-            this.tabRegister.Controls.Add(this.txtSalary);
-            this.tabRegister.Controls.Add(this.cmbHealthStatus);
-            this.tabRegister.Controls.Add(this.lblHealthStatus);
+            this.tabRegister.Controls.Add(this.txtAddress);
             this.tabRegister.Controls.Add(this.dtDateOfBirth);
             this.tabRegister.Controls.Add(this.btnRegister);
-            this.tabRegister.Controls.Add(this.cmbMaritalStatus);
-            this.tabRegister.Controls.Add(this.lblMaritalStatus);
             this.tabRegister.Controls.Add(this.lblOccupation);
             this.tabRegister.Controls.Add(this.cmbOccupation);
             this.tabRegister.Controls.Add(this.txtName);
@@ -178,41 +186,125 @@
             this.tabRegister.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabRegister.Name = "tabRegister";
             this.tabRegister.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabRegister.Size = new System.Drawing.Size(842, 403);
+            this.tabRegister.Size = new System.Drawing.Size(955, 403);
             this.tabRegister.TabIndex = 0;
-            this.tabRegister.Text = "Member";
+            this.tabRegister.Text = "Paciente";
             this.tabRegister.UseVisualStyleBackColor = true;
             // 
-            // lblHealthStatusRequired
+            // label14
             // 
-            this.lblHealthStatusRequired.AutoSize = true;
-            this.lblHealthStatusRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHealthStatusRequired.ForeColor = System.Drawing.Color.Red;
-            this.lblHealthStatusRequired.Location = new System.Drawing.Point(540, 88);
-            this.lblHealthStatusRequired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblHealthStatusRequired.Name = "lblHealthStatusRequired";
-            this.lblHealthStatusRequired.Size = new System.Drawing.Size(28, 36);
-            this.lblHealthStatusRequired.TabIndex = 22;
-            this.lblHealthStatusRequired.Text = "*";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(671, 26);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 36);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "*";
             // 
-            // lblMaritalStatusRequired
+            // label13
             // 
-            this.lblMaritalStatusRequired.AutoSize = true;
-            this.lblMaritalStatusRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaritalStatusRequired.ForeColor = System.Drawing.Color.Red;
-            this.lblMaritalStatusRequired.Location = new System.Drawing.Point(543, 26);
-            this.lblMaritalStatusRequired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMaritalStatusRequired.Name = "lblMaritalStatusRequired";
-            this.lblMaritalStatusRequired.Size = new System.Drawing.Size(28, 36);
-            this.lblMaritalStatusRequired.TabIndex = 21;
-            this.lblMaritalStatusRequired.Text = "*";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(119, 273);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(28, 36);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "*";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(26, 316);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 22);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Otros";
+            // 
+            // textOthers
+            // 
+            this.textOthers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textOthers.Location = new System.Drawing.Point(203, 310);
+            this.textOthers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textOthers.MaxLength = 12;
+            this.textOthers.Name = "textOthers";
+            this.textOthers.Size = new System.Drawing.Size(411, 28);
+            this.textOthers.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(160, 115);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 36);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(160, 70);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 36);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "*";
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLastName.Location = new System.Drawing.Point(204, 115);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLastName.MaxLength = 12;
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(227, 28);
+            this.txtLastName.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(20, 121);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 22);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Apellido Materno";
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFirstName.Location = new System.Drawing.Point(204, 70);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtFirstName.MaxLength = 12;
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(227, 28);
+            this.txtFirstName.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 72);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(142, 22);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Apellido Paterno";
             // 
             // lblOccupationRequired
             // 
             this.lblOccupationRequired.AutoSize = true;
             this.lblOccupationRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOccupationRequired.ForeColor = System.Drawing.Color.Red;
-            this.lblOccupationRequired.Location = new System.Drawing.Point(126, 134);
+            this.lblOccupationRequired.Location = new System.Drawing.Point(83, 218);
             this.lblOccupationRequired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOccupationRequired.Name = "lblOccupationRequired";
             this.lblOccupationRequired.Size = new System.Drawing.Size(28, 36);
@@ -224,7 +316,7 @@
             this.lblDOBRequired.AutoSize = true;
             this.lblDOBRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDOBRequired.ForeColor = System.Drawing.Color.Red;
-            this.lblDOBRequired.Location = new System.Drawing.Point(134, 80);
+            this.lblDOBRequired.Location = new System.Drawing.Point(134, 173);
             this.lblDOBRequired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDOBRequired.Name = "lblDOBRequired";
             this.lblDOBRequired.Size = new System.Drawing.Size(28, 36);
@@ -236,7 +328,7 @@
             this.lblNameRequired.AutoSize = true;
             this.lblNameRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameRequired.ForeColor = System.Drawing.Color.Red;
-            this.lblNameRequired.Location = new System.Drawing.Point(80, 26);
+            this.lblNameRequired.Location = new System.Drawing.Point(97, 23);
             this.lblNameRequired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNameRequired.Name = "lblNameRequired";
             this.lblNameRequired.Size = new System.Drawing.Size(28, 36);
@@ -246,141 +338,102 @@
             // lblNoOfChildren
             // 
             this.lblNoOfChildren.AutoSize = true;
-            this.lblNoOfChildren.Location = new System.Drawing.Point(424, 146);
+            this.lblNoOfChildren.Location = new System.Drawing.Point(527, 26);
             this.lblNoOfChildren.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNoOfChildren.Name = "lblNoOfChildren";
-            this.lblNoOfChildren.Size = new System.Drawing.Size(126, 22);
+            this.lblNoOfChildren.Size = new System.Drawing.Size(146, 22);
             this.lblNoOfChildren.TabIndex = 17;
-            this.lblNoOfChildren.Text = "No. of children";
+            this.lblNoOfChildren.Text = "No. Telf / Celular";
             // 
-            // txtNoOfChildren
+            // txtNoPhone
             // 
-            this.txtNoOfChildren.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNoOfChildren.Location = new System.Drawing.Point(573, 142);
-            this.txtNoOfChildren.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNoOfChildren.MaxLength = 2;
-            this.txtNoOfChildren.Name = "txtNoOfChildren";
-            this.txtNoOfChildren.Size = new System.Drawing.Size(78, 28);
-            this.txtNoOfChildren.TabIndex = 8;
+            this.txtNoPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoPhone.Location = new System.Drawing.Point(725, 24);
+            this.txtNoPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNoPhone.MaxLength = 2;
+            this.txtNoPhone.Name = "txtNoPhone";
+            this.txtNoPhone.Size = new System.Drawing.Size(194, 28);
+            this.txtNoPhone.TabIndex = 8;
             // 
             // lblSalary
             // 
             this.lblSalary.AutoSize = true;
-            this.lblSalary.Location = new System.Drawing.Point(26, 194);
+            this.lblSalary.Location = new System.Drawing.Point(26, 273);
             this.lblSalary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSalary.Name = "lblSalary";
-            this.lblSalary.Size = new System.Drawing.Size(61, 22);
+            this.lblSalary.Size = new System.Drawing.Size(85, 22);
             this.lblSalary.TabIndex = 15;
-            this.lblSalary.Text = "Salary";
+            this.lblSalary.Text = "Direccion";
             // 
-            // txtSalary
+            // txtAddress
             // 
-            this.txtSalary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSalary.Location = new System.Drawing.Point(166, 188);
-            this.txtSalary.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtSalary.MaxLength = 12;
-            this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(227, 28);
-            this.txtSalary.TabIndex = 5;
-            // 
-            // cmbHealthStatus
-            // 
-            this.cmbHealthStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHealthStatus.FormattingEnabled = true;
-            this.cmbHealthStatus.Location = new System.Drawing.Point(573, 86);
-            this.cmbHealthStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbHealthStatus.Name = "cmbHealthStatus";
-            this.cmbHealthStatus.Size = new System.Drawing.Size(226, 30);
-            this.cmbHealthStatus.TabIndex = 7;
-            // 
-            // lblHealthStatus
-            // 
-            this.lblHealthStatus.AutoSize = true;
-            this.lblHealthStatus.Location = new System.Drawing.Point(423, 86);
-            this.lblHealthStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblHealthStatus.Name = "lblHealthStatus";
-            this.lblHealthStatus.Size = new System.Drawing.Size(115, 22);
-            this.lblHealthStatus.TabIndex = 12;
-            this.lblHealthStatus.Text = "Health status";
+            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAddress.Location = new System.Drawing.Point(203, 267);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAddress.MaxLength = 12;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(411, 28);
+            this.txtAddress.TabIndex = 6;
             // 
             // dtDateOfBirth
             // 
             this.dtDateOfBirth.AllowDrop = true;
             this.dtDateOfBirth.CustomFormat = "dd/MM/yyyy";
             this.dtDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDateOfBirth.Location = new System.Drawing.Point(166, 71);
+            this.dtDateOfBirth.Location = new System.Drawing.Point(204, 166);
             this.dtDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtDateOfBirth.MaxDate = new System.DateTime(2012, 12, 25, 0, 0, 0, 0);
             this.dtDateOfBirth.MinDate = new System.DateTime(1910, 1, 1, 0, 0, 0, 0);
             this.dtDateOfBirth.Name = "dtDateOfBirth";
             this.dtDateOfBirth.Size = new System.Drawing.Size(226, 28);
-            this.dtDateOfBirth.TabIndex = 3;
+            this.dtDateOfBirth.TabIndex = 4;
             this.dtDateOfBirth.Value = new System.DateTime(2012, 12, 25, 0, 0, 0, 0);
             // 
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(627, 333);
+            this.btnRegister.Location = new System.Drawing.Point(747, 335);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(172, 43);
             this.btnRegister.TabIndex = 9;
-            this.btnRegister.Text = "Register";
+            this.btnRegister.Text = "Guardar";
             this.btnRegister.UseVisualStyleBackColor = true;
-            // 
-            // cmbMaritalStatus
-            // 
-            this.cmbMaritalStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMaritalStatus.FormattingEnabled = true;
-            this.cmbMaritalStatus.Location = new System.Drawing.Point(576, 25);
-            this.cmbMaritalStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbMaritalStatus.Name = "cmbMaritalStatus";
-            this.cmbMaritalStatus.Size = new System.Drawing.Size(226, 30);
-            this.cmbMaritalStatus.TabIndex = 6;
-            // 
-            // lblMaritalStatus
-            // 
-            this.lblMaritalStatus.AutoSize = true;
-            this.lblMaritalStatus.Location = new System.Drawing.Point(423, 25);
-            this.lblMaritalStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMaritalStatus.Name = "lblMaritalStatus";
-            this.lblMaritalStatus.Size = new System.Drawing.Size(116, 22);
-            this.lblMaritalStatus.TabIndex = 6;
-            this.lblMaritalStatus.Text = "Marital status";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // lblOccupation
             // 
             this.lblOccupation.AutoSize = true;
-            this.lblOccupation.Location = new System.Drawing.Point(24, 132);
+            this.lblOccupation.Location = new System.Drawing.Point(24, 221);
             this.lblOccupation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOccupation.Name = "lblOccupation";
-            this.lblOccupation.Size = new System.Drawing.Size(101, 22);
+            this.lblOccupation.Size = new System.Drawing.Size(51, 22);
             this.lblOccupation.TabIndex = 5;
-            this.lblOccupation.Text = "Occupation";
+            this.lblOccupation.Text = "Sexo";
             // 
             // cmbOccupation
             // 
             this.cmbOccupation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOccupation.FormattingEnabled = true;
-            this.cmbOccupation.Location = new System.Drawing.Point(166, 125);
+            this.cmbOccupation.Location = new System.Drawing.Point(204, 218);
             this.cmbOccupation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbOccupation.Name = "cmbOccupation";
             this.cmbOccupation.Size = new System.Drawing.Size(226, 30);
-            this.cmbOccupation.TabIndex = 4;
+            this.cmbOccupation.TabIndex = 5;
             // 
             // txtName
             // 
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Location = new System.Drawing.Point(166, 20);
+            this.txtName.Location = new System.Drawing.Point(204, 26);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(227, 28);
-            this.txtName.TabIndex = 2;
+            this.txtName.TabIndex = 1;
             // 
             // lblDateOfBirth
             // 
             this.lblDateOfBirth.AutoSize = true;
-            this.lblDateOfBirth.Location = new System.Drawing.Point(24, 78);
+            this.lblDateOfBirth.Location = new System.Drawing.Point(24, 171);
             this.lblDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDateOfBirth.Name = "lblDateOfBirth";
             this.lblDateOfBirth.Size = new System.Drawing.Size(110, 22);
@@ -843,21 +896,15 @@
         private System.Windows.Forms.TabPage tabRegistration;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabRegister;
-        private System.Windows.Forms.Label lblHealthStatusRequired;
-        private System.Windows.Forms.Label lblMaritalStatusRequired;
         private System.Windows.Forms.Label lblOccupationRequired;
         private System.Windows.Forms.Label lblDOBRequired;
         private System.Windows.Forms.Label lblNameRequired;
         private System.Windows.Forms.Label lblNoOfChildren;
-        private System.Windows.Forms.TextBox txtNoOfChildren;
+        private System.Windows.Forms.TextBox txtNoPhone;
         private System.Windows.Forms.Label lblSalary;
-        private System.Windows.Forms.TextBox txtSalary;
-        private System.Windows.Forms.ComboBox cmbHealthStatus;
-        private System.Windows.Forms.Label lblHealthStatus;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.DateTimePicker dtDateOfBirth;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.ComboBox cmbMaritalStatus;
-        private System.Windows.Forms.Label lblMaritalStatus;
         private System.Windows.Forms.Label lblOccupation;
         private System.Windows.Forms.ComboBox cmbOccupation;
         private System.Windows.Forms.TextBox txtName;
@@ -898,5 +945,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbSearchOccupation;
         private System.Windows.Forms.DataGridView dataGridViewMembers;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textOthers;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
     }
 }

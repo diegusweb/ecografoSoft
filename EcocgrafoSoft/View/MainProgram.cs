@@ -14,7 +14,16 @@ namespace EcocgrafoSoft.View
 {
     public partial class MainProgram : Form
     {
-  
+
+        /// <summary>
+        /// Variable to store error message
+        /// </summary>
+        private string errorMessage;
+
+        /// <summary>
+        /// Member id
+        /// </summary>
+        private int memberId;
 
         public MainProgram()
         {
@@ -34,8 +43,8 @@ namespace EcocgrafoSoft.View
             lblName.Text = Resources.Registration_Name_Label_Text;
             lblDateOfBirth.Text = Resources.Registration_DateOfBirth_Label_Text;
             lblOccupation.Text = Resources.Registration_Occupation_Label_Text;
-            lblMaritalStatus.Text = Resources.Registration_MaritalStatus_Label_Text;
-            lblHealthStatus.Text = Resources.Registration_HealthStatus_Label_Text;
+            //lblMaritalStatus.Text = Resources.Registration_MaritalStatus_Label_Text;
+            //lblHealthStatus.Text = Resources.Registration_HealthStatus_Label_Text;
             lblSalary.Text = Resources.Registration_Salary_Label_Text;
             lblNoOfChildren.Text = Resources.Registration_Children_Label_Text;
             btnRegister.Text = Resources.Registration_Register_Button_Text;
@@ -56,8 +65,8 @@ namespace EcocgrafoSoft.View
         private void InitializeDropDownList()
         {
             cmbOccupation.DataSource = Enum.GetValues(typeof(Occupation));
-            cmbMaritalStatus.DataSource = Enum.GetValues(typeof(MaritalStatus));
-            cmbHealthStatus.DataSource = Enum.GetValues(typeof(HealthStatus));
+            //cmbMaritalStatus.DataSource = Enum.GetValues(typeof(MaritalStatus));
+            //cmbHealthStatus.DataSource = Enum.GetValues(typeof(HealthStatus));
 
             cmbSearchOccupation.DataSource = Enum.GetValues(typeof(Occupation));
             cmbSearchMaritalStatus.DataSource = Enum.GetValues(typeof(MaritalStatus));
@@ -80,11 +89,97 @@ namespace EcocgrafoSoft.View
         private void ResetRegistration()
         {
             txtName.Text = string.Empty;
-            txtSalary.Text = string.Empty;
-            txtNoOfChildren.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+            txtNoPhone.Text = string.Empty;
             cmbOccupation.SelectedIndex = -1;
-            cmbHealthStatus.SelectedIndex = -1;
-            cmbMaritalStatus.SelectedIndex = -1;
+            //cmbHealthStatus.SelectedIndex = -1;
+            //cmbMaritalStatus.SelectedIndex = -1;
+        }
+
+        /// <summary>
+        /// Validates registration input
+        /// </summary>
+        /// <returns>true or false</returns>
+        private bool ValidateRegistration()
+        {
+            this.errorMessage = string.Empty;
+
+            if (txtName.Text.Trim() == string.Empty)
+            {
+                this.AddErrorMessage(Resources.Registration_Name_Required_Text);
+            }
+
+            if (txtFirstName.Text.Trim() == string.Empty)
+            {
+                this.AddErrorMessage(Resources.Registration_FirstName_Required_Text);
+            }
+
+            if (txtLastName.Text.Trim() == string.Empty)
+            {
+                this.AddErrorMessage(Resources.Registration_LastName_Required_Text);
+            }
+
+            if (dtDateOfBirth.Text.Trim() == string.Empty)
+            {
+                this.AddErrorMessage(Resources.Registration_DateOfBirth_Required_Text);
+            }
+
+            if (cmbOccupation.SelectedIndex == -1)
+            {
+                this.AddErrorMessage(Resources.Registration_Occupation_Select_Text);
+            }
+
+
+            return this.errorMessage != string.Empty ? false : true;
+        }
+
+        /// <summary>
+        /// To generate the error message
+        /// </summary>
+        /// <param name="error">error message</param>
+        private void AddErrorMessage(string error)
+        {
+            if (this.errorMessage == string.Empty)
+            {
+                this.errorMessage = Resources.Error_Message_Header + "\n\n";
+            }
+
+
+            this.errorMessage += error + "\n";
+        }
+
+        private void ShowErrorMessage(Exception ex)
+        {
+            MessageBox.Show(
+                ex.Message,
+                //Resources.System_Error_Message, 
+                Resources.System_Error_Message_Title,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.ValidateRegistration())
+                {
+
+                }
+                else {
+                    // Display the validation failed message
+                    MessageBox.Show(
+                        this.errorMessage,
+                        Resources.Registration_Error_Message_Title,
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                this.ShowErrorMessage(ex);
+            }
         }
 
     }

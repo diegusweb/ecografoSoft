@@ -133,7 +133,7 @@
     <value>Export</value>
   </data>
   <data name="Login_Login_Button_Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Entrar</value>
   </data>
   <data name="Login_Password_Label_Text" xml:space="preserve">
     <value>Password:</value>
@@ -153,11 +153,17 @@
   <data name="Print_Print_Button_Text" xml:space="preserve">
     <value>Print</value>
   </data>
+  <data name="Registration_Address_Required_Text" xml:space="preserve">
+    <value>Direccion es Requerida</value>
+  </data>
   <data name="Registration_Children_Label_Text" xml:space="preserve">
-    <value>No. of children</value>
+    <value>No. Telf / Cel.</value>
   </data>
   <data name="Registration_DateOfBirth_Label_Text" xml:space="preserve">
     <value>Date of birth</value>
+  </data>
+  <data name="Registration_DateOfBirth_Required_Text" xml:space="preserve">
+    <value>Fecha es requerida</value>
   </data>
   <data name="Registration_Error_Message" xml:space="preserve">
     <value>Registration failed</value>
@@ -165,11 +171,17 @@
   <data name="Registration_Error_Message_Title" xml:space="preserve">
     <value>Registration error</value>
   </data>
+  <data name="Registration_FirstName_Required_Text" xml:space="preserve">
+    <value>Apellido Paterno es Requerida</value>
+  </data>
   <data name="Registration_HealthStatus_Label_Text" xml:space="preserve">
     <value>Health status</value>
   </data>
   <data name="Registration_HealthStatus_Select_Text" xml:space="preserve">
     <value>Please select health status.</value>
+  </data>
+  <data name="Registration_LastName_Required_Text" xml:space="preserve">
+    <value>Apelido Materno es Requerida</value>
   </data>
   <data name="Registration_MaritalStatus_Label_Text" xml:space="preserve">
     <value>Marital status</value>
@@ -178,13 +190,13 @@
     <value>Please select marital status.</value>
   </data>
   <data name="Registration_Name_Label_Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Nombre</value>
   </data>
   <data name="Registration_Name_Required_Text" xml:space="preserve">
-    <value>Name is required.</value>
+    <value>Nombre es requerido</value>
   </data>
   <data name="Registration_Occupation_Label_Text" xml:space="preserve">
-    <value>Occupation</value>
+    <value>Sexo</value>
   </data>
   <data name="Registration_Occupation_Select_Text" xml:space="preserve">
     <value>Please select a occupation.</value>
@@ -193,7 +205,7 @@
     <value>Register</value>
   </data>
   <data name="Registration_Salary_Label_Text" xml:space="preserve">
-    <value>Salary</value>
+    <value>Direccion</value>
   </data>
   <data name="Registration_Successful_Message" xml:space="preserve">
     <value>New member registered successfully!</value>
@@ -214,7 +226,7 @@
     <value>Oops! System error. Please contact administrator.</value>
   </data>
   <data name="System_Error_Message_Title" xml:space="preserve">
-    <value>Error - Message</value>
+    <value>lllllllllll/</value>
   </data>
   <data name="Update_Button_Text" xml:space="preserve">
     <value>Update</value>

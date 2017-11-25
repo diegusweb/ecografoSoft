@@ -106,7 +106,7 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Login.
+        ///   Looks up a localized string similar to Entrar.
         /// </summary>
         internal static string Login_Login_Button_Text {
             get {
@@ -169,7 +169,16 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No. of children.
+        ///   Looks up a localized string similar to Direccion es Requerida.
+        /// </summary>
+        internal static string Registration_Address_Required_Text {
+            get {
+                return ResourceManager.GetString("Registration_Address_Required_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No. Telf / Cel..
         /// </summary>
         internal static string Registration_Children_Label_Text {
             get {
@@ -183,6 +192,15 @@ namespace EcocgrafoSoft.Properties {
         internal static string Registration_DateOfBirth_Label_Text {
             get {
                 return ResourceManager.GetString("Registration_DateOfBirth_Label_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fecha es requerida.
+        /// </summary>
+        internal static string Registration_DateOfBirth_Required_Text {
+            get {
+                return ResourceManager.GetString("Registration_DateOfBirth_Required_Text", resourceCulture);
             }
         }
         
@@ -205,6 +223,15 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apellido Paterno es Requerida.
+        /// </summary>
+        internal static string Registration_FirstName_Required_Text {
+            get {
+                return ResourceManager.GetString("Registration_FirstName_Required_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Health status.
         /// </summary>
         internal static string Registration_HealthStatus_Label_Text {
@@ -219,6 +246,15 @@ namespace EcocgrafoSoft.Properties {
         internal static string Registration_HealthStatus_Select_Text {
             get {
                 return ResourceManager.GetString("Registration_HealthStatus_Select_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apelido Materno es Requerida.
+        /// </summary>
+        internal static string Registration_LastName_Required_Text {
+            get {
+                return ResourceManager.GetString("Registration_LastName_Required_Text", resourceCulture);
             }
         }
         
@@ -241,7 +277,7 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to Nombre.
         /// </summary>
         internal static string Registration_Name_Label_Text {
             get {
@@ -250,7 +286,7 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name is required..
+        ///   Looks up a localized string similar to Nombre es requerido.
         /// </summary>
         internal static string Registration_Name_Required_Text {
             get {
@@ -259,7 +295,7 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Occupation.
+        ///   Looks up a localized string similar to Sexo.
         /// </summary>
         internal static string Registration_Occupation_Label_Text {
             get {
@@ -286,7 +322,7 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Salary.
+        ///   Looks up a localized string similar to Direccion.
         /// </summary>
         internal static string Registration_Salary_Label_Text {
             get {
@@ -349,7 +385,7 @@ namespace EcocgrafoSoft.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error - Message.
+        ///   Looks up a localized string similar to lllllllllll/.
         /// </summary>
         internal static string System_Error_Message_Title {
             get {
